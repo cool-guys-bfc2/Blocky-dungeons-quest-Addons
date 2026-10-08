@@ -2,6 +2,8 @@
   "format":"bd2-addon",
   "name":"x1.0.0",
   "content":{
-    "enemies":[]
+    "enemies":[
+      {"key":"goblin","shape":"zombie","behavior":"meelee","hp":10,"dmg":2,"speed":2.5,"radius":1,"height":2,"xp":2,"gold":5,"attackCd":true,"reach":2,"hitcolor":[0,0,0],"palette":[0,1,0]}
+    ]
   }
 }
