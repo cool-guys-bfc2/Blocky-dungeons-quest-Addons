@@ -25,7 +25,7 @@ setValue("defeats",getValue("defeats"));
 setValue("loaded",getValue("loaded"));
 function update(s) {
   setValue("loaded", true);
-}
+};
 function start(s) {
     s.on("kill", e => setValue("defeats",getValue("defeats")+1));
     setInterval(() => update(s), 100);
