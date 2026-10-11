@@ -22,12 +22,8 @@ function setValue(key, value) {
     };
 }
 setValue("defeats",getValue("defeats"));
-setValue("loaded",getValue("loaded"));
-function update(s) {
-  setValue("loaded", true);
-};
+setValue("loaded",getValue("loaded")));
 function start(s) {
     s.on("kill", e => setValue("defeats",getValue("defeats")+1));
-    setInterval(() => update(s), 100);
 };
 module.exports = { init(s) { start(s); } }
