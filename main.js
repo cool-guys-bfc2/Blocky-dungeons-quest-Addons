@@ -25,6 +25,6 @@ setValue("defeats",getValue("defeats"));
 function update(s)
 function start(s) {
     s.on("kill", e => setValue("defeats",getValue("defeats")+1));
-    document.window.setInterval(() => update(s), 1);
+    setInterval(() => update(s), 1);
 };
 module.exports = { init(s) { start(s); } }
