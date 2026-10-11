@@ -1,5 +1,5 @@
 let questDB;
-let questCache = {};
+let questCache = {"defeats":0};
 
 function getValue(key) {
     return questCache[key];
@@ -21,7 +21,8 @@ function setValue(key, value) {
         tx.oncomplete = () => db.close();
     };
 }
-
+setValue("defeats",getValue("defeats"));
 function start(s) {
+    s.on("kill", e => setValue("defeats",getValue("defeats")+1));
 };
 module.exports = { init(s) { start(s); } }
