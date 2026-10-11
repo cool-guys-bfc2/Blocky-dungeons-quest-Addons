@@ -1,0 +1,112 @@
+{
+  "format": "bd2-addon",
+  "version": 1,
+  "name": "My First Pack",
+  "author": "Your name",
+  "description": "One new foe and one new depth inside Grimhollow. Edit and re-import it.",
+  "content": {
+    "enemies": [
+      {
+        "key": "my_foe",
+        "label": "My Foe",
+        "shape": "zombie",
+        "behavior": "melee",
+        "hp": 40,
+        "dmg": 10,
+        "speed": 2.4,
+        "radius": 0.42,
+        "height": 1.95,
+        "xp": 18,
+        "gold": [
+          6,
+          12
+        ],
+        "attackCd": 1.1,
+        "reach": 1.5,
+        "hitColor": 16738876,
+        "palette": {
+          "skin": 8014474,
+          "dark": 4860506,
+          "cloth": 3811914,
+          "legs": 2759734,
+          "hair": 0,
+          "glow": 16738876
+        }
+      }
+    ],
+    "depths": [
+      {
+        "key": "my_depth",
+        "region": "grimhollow",
+        "depth": 3,
+        "tier": 16,
+        "name": "My Depth",
+        "subtitle": "A test chamber.",
+        "waves": [
+          8,
+          10
+        ],
+        "pool": [
+          "my_foe",
+          "zombie"
+        ],
+        "elites": 0,
+        "eliteType": "brute",
+        "boss": null,
+        "palette": {
+          "floor": 7307095,
+          "wall": 4936768,
+          "accent": 13696890,
+          "torch": 16755021,
+          "fog": 922640,
+          "sky": 4874578,
+          "ground": 1317394
+        }
+      }
+    ],
+    "music": [
+      {
+        "key": "my_tune",
+        "name": "My Tune",
+        "bpm": 100,
+        "lead": [
+          "C4",
+          "",
+          "E4",
+          "",
+          "G4",
+          "",
+          "E4",
+          "",
+          "A4",
+          "",
+          "G4",
+          "",
+          "E4",
+          "",
+          "C4",
+          ""
+        ],
+        "bass": [
+          "C2",
+          "",
+          "C2",
+          "",
+          "G1",
+          "",
+          "G1",
+          "",
+          "A1",
+          "",
+          "A1",
+          "",
+          "C2",
+          "",
+          "C2",
+          ""
+        ],
+        "drums": "k.h.s.h.k.h.s.h."
+      }
+    ]
+  }
+}
