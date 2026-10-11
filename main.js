@@ -1,5 +1,5 @@
 let questDB;
-let questCache = {"defeats":0};
+let questCache = {"defeats":0,"loaded":false};
 
 function getValue(key) {
     return questCache[key];
@@ -22,9 +22,12 @@ function setValue(key, value) {
     };
 }
 setValue("defeats",getValue("defeats"));
-function update(s)
+setValue("loaded",getValue("loaded"));
+function update(s) {
+  setValue("loaded", true);
+}
 function start(s) {
     s.on("kill", e => setValue("defeats",getValue("defeats")+1));
-    setInterval(() => update(s), 1);
+    setInterval(() => update(s), 100);
 };
 module.exports = { init(s) { start(s); } }
