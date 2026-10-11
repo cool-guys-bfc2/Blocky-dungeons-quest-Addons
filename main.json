@@ -1,18 +1,18 @@
 {
   "format": "bd2-addon",
   "version": 1,
-  "name": "My First Pack",
-  "author": "Your name",
+  "name": "CreateQuest",
+  "author": "BD2",
   "description": "One new foe and one new depth inside Grimhollow. Edit and re-import it.",
   "content": {
     "enemies": [
       {
-        "key": "my_foe",
-        "label": "My Foe",
+        "key": "goblin",
+        "label": "Goblin",
         "shape": "zombie",
         "behavior": "melee",
-        "hp": 40,
-        "dmg": 10,
+        "hp": 10,
+        "dmg": 5,
         "speed": 2.4,
         "radius": 0.42,
         "height": 1.95,
